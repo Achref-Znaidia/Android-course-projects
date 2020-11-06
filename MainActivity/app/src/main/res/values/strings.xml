@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="calcul_de_votre_imc">Calcul de votre IMC</string>
+    <string name="votre_nom">Votre Nom</string>
+    <string name="votre_poids">Votre Poids</string>
+    <string name="votre_taille">Votre Taille</string>
+    <string name="votre_age">Votre Age</string>
+    <string name="calculer">CALCULER</string>
+    <string name="votre_imc">Votre IMC</string>
+    <string name="votre_indice">Votre indice</string>
+</resources>

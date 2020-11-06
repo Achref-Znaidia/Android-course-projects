@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3C3F41"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcul_de_votre_imc"
+            android:textColor="#D3C5C5"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autofillHints="@string/votre_nom"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/votre_nom"
+            android:inputType="textPersonName"
+            android:textColor="#DAD5D5" />
+
+        <EditText
+            android:id="@+id/poids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autofillHints="@string/votre_poids"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/votre_poids"
+            android:inputType="number"
+            android:textColor="#DAD5D5" />
+
+        <EditText
+            android:id="@+id/taille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autofillHints="@string/votre_taille"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/votre_taille"
+            android:inputType="number"
+            android:textColor="#DAD5D5" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:autofillHints="@string/votre_age"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/votre_age"
+            android:inputType="number"
+            android:textColor="#DAD5D5" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#686666"
+            android:onClick="calculer_imc"
+            android:text="@string/calculer"
+            android:textColor="#D3CCCC"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
